@@ -1,0 +1,59 @@
+const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-1">
+            <a href="/" className="flex-shrink-0">
+              <img className="h-8 w-auto" src="/vite.svg" alt="Logo" />
+            </a>
+            <p className="mt-4 text-gray-400">
+              Transformando cuerpos, mentes y vidas a través del fitness.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Quick Links</h3>
+            <ul className="mt-4 space-y-4">
+              <li><a href="#" className="text-base text-gray-300 hover:text-white">Policies</a></li>
+              <li><a href="#" className="text-base text-gray-300 hover:text-white">FAQ</a></li>
+              <li><a href="#" className="text-base text-gray-300 hover:text-white">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Info</h3>
+            <ul className="mt-4 space-y-4">
+              <li><p className="text-base text-gray-300">Email: info@toseigusoku.com</p></li>
+              <li><p className="text-base text-gray-300">Phone: +1 234 567 890</p></li>
+              <li><p className="text-base text-gray-300">Address: 123 Fitness St, Workout City</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Social Media</h3>
+            <div className="mt-4 flex space-x-6">
+            <a href="#" className="text-white hover:text-indigo-400">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.8.36-1.65.6-2.54.7.9-.54 1.6-1.4 1.92-2.44-.84.5-1.78.86-2.78 1.06C18.26 4.3 17.1 4 15.82 4c-2.44 0-4.42 1.98-4.42 4.42 0 .34.04.68.1.1L7.1 9.42C6.7 7.9 5.8 6.63 4.58 5.82c-.34.58-.53 1.25-.53 1.96 0 1.5.76 2.84 1.94 3.62-.7-.02-1.36-.22-1.94-.54v.06c0 2.1 1.5 3.85 3.5 4.25-.36.1-.74.14-1.14.14-.28 0-.55-.02-.82-.08.56 1.72 2.18 2.97 4.1 3-1.48 1.16-3.36 1.86-5.4 1.86-.35 0-.7-.02-1.04-.06 1.92 1.24 4.2 1.96 6.68 1.96 8.02 0 12.4-6.64 12.4-12.4v-.56c.84-.6 1.58-1.36 2.16-2.24z" />
+              </svg>
+            </a>
+            <a href="#" className="text-white hover:text-indigo-400">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.2 6.78h-1.34c-.5 0-.6.24-.6.6v.94h1.86l-.24 1.86h-1.62v4.78h-1.94v-4.78H9v-1.86h1.32v-.7c0-1.3.8-2.02 1.96-2.02h1.6v1.88z" clipRule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" className="text-white hover:text-indigo-400">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.6 5.8c.2.1.3.2.4.4.1.2.2.4.2.6v6.4c0 .4-.1.7-.4.9-.2.2-.5.3-.8.3h-1.2c-.3 0-.6-.1-.8-.3-.2-.2-.4-.5-.4-.9V9.4c0-.4.1-.7.4-.9.2-.2.5-.3.8-.3h1.2c.3 0 .6.1.8.3zm-3.6 0c.2.1.3.2.4.4.1.2.2.4.2.6v6.4c0 .4-.1.7-.4.9-.2.2-.5.3-.8.3h-1.2c-.3 0-.6-.1-.8-.3-.2-.2-.4-.5-.4-.9V9.4c0-.4.1-.7.4-.9.2-.2.5-.3.8-.3h1.2c.3 0 .6.1.8.3zm-3.6 0c.2.1.3.2.4.4.1.2.2.4.2.6v6.4c0 .4-.1.7-.4.9-.2.2-.5.3-.8.3H8c-.3 0-.6-.1-.8-.3-.2-.2-.4-.5-.4-.9V9.4c0-.4.1-.7.4-.9.2-.2.5-.3.8-.3h1.2c.3 0 .6.1.8.3z" clipRule="evenodd" />
+              </svg>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 border-t border-gray-700 pt-8 text-center">
+          <p className="text-base text-gray-400">&copy; 2025 Tosei Gusoku. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+.rain-container {
+  position: absolute;
+  inset: 0;
+}
+
+.rain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --duration: 10s;
+  --delay: 0.1s;
+}
+
+.particles > div {
+  position: absolute;
+  border-radius: 100%;
+  background-color: rgba(191, 228, 253, 0.8);
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+  z-index: 11;
+  animation-name: wave;
+}
+
+.particles > div:nth-child(1) {
+  width: 7px;
+  height: 7px;
+  bottom: 80%;
+  left: 50%;
+  animation-name: jumpLeft;
+}
+
+.particles > div:nth-child(2) {
+  width: 5px;
+  height: 5px;
+  bottom: 60%;
+  left: 30%;
+  animation-name: jumpLeft;
+  animation-delay:   0.02s;
+}
+
+.particles > div:nth-child(3) {
+  width: 3px;
+  height: 3px;
+  bottom: 20%;
+  left: 70%;
+  animation-name: jumpRight;
+  animation-delay:  0.04s;
+}
+
+.particles > div:nth-child(4) {
+  width: 5px;
+  height: 5px;
+  bottom: 20%;
+  left: 80%;
+  animation-name: jumpRight;
+  animation-delay: 0.06s;
+}
+
+.particles > div:nth-child(5) {
+  width: 6px;
+  height: 6px;
+  bottom: 40%;
+  left: 10%;
+  animation-name: jumpLeft;
+  animation-delay:  0.08s;
+}
+
+.particles > div:nth-child(6) {
+  width: 8px;
+  height: 8px;
+  bottom: 50%;
+  left: 40%;
+  animation-name: jumpRight;
+  animation-delay: calc(var(--delay) + 0.1s);
+}
+
+.particles > div:nth-child(7) {
+  width: 4px;
+  height: 4px;
+  bottom: 30%;
+  left: 60%;
+  animation-name: jumpLeft;
+  animation-delay: calc(var(--delay) + 0.12s);
+}
+
+.particles > div:nth-child(8) {
+  width: 7px;
+  height: 7px;
+  bottom: 25%;
+  left: 90%;
+  animation-name: jumpRight;
+ animation-delay:  0.08s;
+}
+
+.particles > div:nth-child(9) {
+  width: 5px;
+  height: 5px;
+  bottom: 50%;
+  left: 80%;
+  animation-name: jumpRight;
+  animation-delay: calc(var(--delay) + 0.06s);
+}
+
+.particles > div:nth-child(10) {
+  width: 7px;
+  height: 7px;
+  bottom: 80%;
+  right: 50%;
+  animation-name: jumpRight;
+}
+
+.particles > div:nth-child(11) {
+  width: 7px;
+  height: 7px;
+  bottom: 75%;
+  left: 90%;
+  animation-name: jumpRight;
+animation-delay:  0.08s;
+}
+
+
+@keyframes jumpLeft {
+  0% {
+    transform: translate(0, 100px) scale(0);
+  }
+  45% {
+    transform: translate(0, 100px) scale(0);
+  }
+  60% {
+    transform: translate(-50px, 0) scale(1);
+  }
+  100% {
+    transform: translate(-60px, -100px) scale(0.1);
+  }
+}
+
+@keyframes jumpRight {
+  0% {
+    transform: translate(0, 100px) scale(0);
+  }
+  45% {
+    transform: translate(0, 100px) scale(0);
+  }
+  60% {
+    transform: translate(30px, 0) scale(1);
+  }
+  100% {
+    transform: translate(50px, -100px) scale(0.1);
+  }
+}
+
+@keyframes wave {
+  0% {
+    background: radial-gradient(ellipse at top center, #4a91e2b8 0%, transparent 70%);
+    transform: translateX(0px) translateY(0px);
+  }
+  8.33% {
+    background: radial-gradient(ellipse at top center, #56a3e6a3 0%, transparent 70%);
+    transform: translateX(1px) translateY(2px);
+  }
+  12.5% {
+    background: radial-gradient(ellipse at top center, #63a6e9a8 0%, transparent 70%);
+    transform: translateX(2px) translateY(0px);
+  }
+  16.67% {
+    background: radial-gradient(ellipse at top center, #7cbaf09e 0%, transparent 70%);
+    transform: translateX(1px) translateY(-2px);
+  }
+  25% {
+    background: radial-gradient(ellipse at top center, #8cc4f0d0 0%, transparent 70%);
+    transform: translateX(0px) translateY(0px);
+  }
+  33.33% {
+    background: radial-gradient(ellipse at top center, #a8d5f0cd 0%, transparent 70%);
+    transform: translateX(-1px) translateY(2px);
+  }
+  37.5% {
+    background: radial-gradient(ellipse at top center, #bedef3cd 0%, transparent 70%);
+    transform: translateX(-2px) translateY(0px);
+  }
+  41.67% {
+    background: radial-gradient(ellipse at top center, #c9e3f5cd 0%, transparent 70%);
+    transform: translateX(-1px) translateY(-2px);
+  }
+  50% {
+    background: radial-gradient(ellipse at top center, #d4e8f7c4 0%, transparent 70%);
+    transform: translateX(0px) translateY(0px);
+  }
+  58.33% {
+    background: radial-gradient(ellipse at top center, #dfeef9e0 0%, transparent 70%);
+    transform: translateX(1px) translateY(2px);
+  }
+  62.5% {
+    background: radial-gradient(ellipse at top center, #badcf1e0 0%, transparent 70%);
+    transform: translateX(2px) translateY(0px);
+  }
+  66.67% {
+    background: radial-gradient(ellipse at top center, #b7e1ffd2 0%, transparent 70%);
+    transform: translateX(1px) translateY(-2px);
+  }
+  75% {
+    background: radial-gradient(ellipse at top center, #abd8f4d2 0%, transparent 70%);
+    transform: translateX(0px) translateY(0px);
+  }
+  83.33% {
+    background: radial-gradient(ellipse at top center, #d4e8f7c5 0%, transparent 70%);
+    transform: translateX(-1px) translateY(2px);
+  }
+  87.5% {
+    background: radial-gradient(ellipse at top center, #bedef3c5 0%, transparent 70%);
+    transform: translateX(-2px) translateY(0px);
+  }
+  91.67% {
+    background: radial-gradient(ellipse at top center, #82c9f6c5 0%, transparent 70%);
+    transform: translateX(-1px) translateY(-2px);
+  }
+  100% {
+    background: radial-gradient(ellipse at top center, #1ea6fad0 0%, transparent 70%);
+    transform: translateX(0px) translateY(0px);
+  }
+}

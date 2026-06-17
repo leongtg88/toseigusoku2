@@ -23,10 +23,14 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative h-full flex flex-row  items-center px-4 sm:px-6 lg:px-2">
+      <div className="relative h-full flex flex-row lg:itmes-start  xl:items-center  2xl:pb-[180px] justify-center px-4 sm:px-6 lg:px-2 lg:py-[80px]">
 
-        <div className='relative flex-1 lg:h-[600px] lg:w-[300px]'>
-          <div className="relative h-full w-full flex flex-col justify-end items-center">
+
+        {/*Conteneodr izquierdo imagenes */}
+        <div className='relative w-1/2 lg:h-[600px] '>
+
+          {/*Contenedor hijo izq imagenes */}
+          <div className="relative h-full w-full flex flex-col  items-center">
 
 
             <img
@@ -66,6 +70,26 @@ const Hero = () => {
                 lg:w-[300px] lg:h-[300px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-40 lg:-translate-y-[33px] "
             />
 
+                                <div className="rain-container absolute inset-0">
+                        <div className="rain">
+                            <div className="waves"></div>
+                            <div className="particles">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
             {/* Blur effect at the bottom */}
             <style>{`
               @keyframes color-change {
@@ -73,15 +97,17 @@ const Hero = () => {
                 100% { filter: hue-rotate(360deg); }
               }
             `}</style>
-            <div className="absolute bottom-0 lg:bottom-[-77px] lg:left-[150px] lg:transform lg:-translate-x-40 lg:-translate-y-[33px]       
+            <div className="absolute bottom-0 lg:bottom-[-77px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-[33px] lg:ml-[30px]       
                 h-[100px] lg:w-[750px] bg-[radial-gradient(closest-side,#3caffc,transparent)] rounded-l rounded-r" style={{ animation: "color-change 10s infinite linear" }}></div>
           </div>
 
         </div>
 
+        {/*Contenedor derecho imagenes */}
+        <div className="w-1/2 text-left text-white max-w-lg  flex justify-center mx-auto lg:ml-12  ">
 
-        <div className="text-left text-white max-w-lg flex-1 lg:ml-12">
-          <div className="bg-transparent backdrop-blur-xs p-8 py-8 rounded-lg">
+          {/*Contenedor  titulos */}
+          <div className="bg-transparent backdrop-blur-xs p-8 py-8  rounded-lg">
 
             <h1 className="text-5xl lg:text-6xl font-bold lg:text-leading-tight! ">
               TU CUERPO ES

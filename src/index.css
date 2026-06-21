@@ -24,114 +24,138 @@
 .particles>div {
   position: absolute;
   border-radius: 100%;
-  background-color: rgba(191, 228, 253, 0.8);
+
   animation-duration: var(--duration);
   animation-delay: var(--delay);
   animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   animation-fill-mode: backwards;
   z-index: 11;
   animation-name: wave;
 }
 
-.particles>div:nth-child(1) {
-  width: 7px;
-  height: 7px;
+  .particles>div:nth-child(1) {
+  width: 2px;
+  height: 20px;
   bottom: 80%;
   left: 50%;
   animation-name: jumpLeft;
   animation-delay: 0s;
+  background-color: #ffffff;
+  rotate: -20deg;
+  
 }
 
 .particles>div:nth-child(2) {
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 12px;
   bottom: 60%;
   left: 30%;
   animation-name: jumpLeft;
   animation-delay: 2s;
+  background-color: #ffffff;
+  rotate: 20deg;
 }
 
 .particles>div:nth-child(3) {
-  width: 3px;
-  height: 3px;
+  width: 2px;
+  height: 7px;
   bottom: 20%;
   left: 70%;
   animation-name: jumpRight;
   animation-delay: 4s;
+  background-color: #ffffff;
+  rotate: -20deg;
 }
 
 .particles>div:nth-child(4) {
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 20px;
   bottom: 20%;
   left: 80%;
   animation-name: jumpRight;
   animation-delay: 0.5s;
+  background-color:#ffffff;
+  rotate: 20deg;
 }
 
 .particles>div:nth-child(5) {
-  width: 6px;
-  height: 6px;
+  width: 2px;
+  height: 15px;
   bottom: 40%;
   left: 10%;
   animation-name: jumpLeft;
   animation-delay: 6s;
+  background-color: #ffffff;
+  rotate: -20deg;
 }
 
 .particles>div:nth-child(6) {
-  width: 8px;
-  height: 8px;
+  width: 2px;
+  height: 17px;
   bottom: 50%;
   left: 40%;
   animation-name: jumpRight;
   animation-delay: 1.5s;
+  background-color: #ffffff;
+  rotate: 20deg;
 }
 
 .particles>div:nth-child(7) {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 14px;
   bottom: 30%;
   left: 60%;
   animation-name: jumpLeft;
   animation-delay: 7.5s;
+  background-color: #ffffff;
+  rotate: -20deg;
 }
 
 .particles>div:nth-child(8) {
-  width: 7px;
-  height: 7px;
+  width: 2px;
+  height: 15px;
   bottom: 25%;
   left: 90%;
   animation-name: jumpRight;
   animation-delay: 3.2s;
+  background-color: #ffffff;
+  rotate: 20deg;
 }
 
 .particles>div:nth-child(9) {
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 15px;
   bottom: 50%;
   left: 80%;
   animation-name: jumpRight;
   animation-delay: 5.5s;
+  background-color: #ffffff;
+  rotate: -20deg;
 }
 
 .particles>div:nth-child(10) {
-  width: 7px;
-  height: 7px;
+  width: 2px;
+  height: 15px;
   bottom: 80%;
   right: 50%;
   animation-name: jumpRight;
   animation-delay: 8.2s;
+  background-color: #f0f0f0;
+  rotate: 20deg;
 }
 
 .particles>div:nth-child(11) {
-  width: 7px;
-  height: 7px;
+  width: 2px;
+  height: 24px;
   bottom: 75%;
   left: 90%;
   animation-name: jumpRight;
   animation-delay: 1s;
+  background-color: #ffffff;
+  rotate: -20deg;
 }
+
 
 
 @keyframes border-color-change {

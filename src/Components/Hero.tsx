@@ -26,57 +26,62 @@ const Hero = () => {
 
     {/* Contenedor principal del hero */}
 
-      <div className="relative h-full flex flex-col lg:flex-row lg:itmes-start  xl:items-center  2xl:pb-[180px] justify-center px-4 sm:px-6 lg:px-2 lg:py-[80px]">
+      <div className="relative h-full flex flex-col  lg:flex-row lg:itmes-start  xl:items-center  2xl:pb-[180px] justify-center px-4 sm:px-6 lg:px-2 lg:py-[80px]">
 
             {/*Conteneodr izquierdo imagenes */}
 
-            <div className='relative h-[400px] lg:w-1/2 lg:h-[600px] '>
+            <div className='relative px-8   h-[400px] lg:w-1/2 lg:h-[600px] '>
 
               {/*Contenedor inquierdo hijo imagenes */}
-              <div className="relative h-full lg:h-full lg:w-full  flex flex-col  items-center">
+              <div className="relative h-full lg:h-full lg:w-full   flex flex-col  items-center">
 
                   {/* Blur effect  */}
-                  <div className="absolute bottom-0 lg:bottom-[-77px]  lg:transform  lg:-translate-y-[33px] lg:ml-[50px]  h-[550px] lg:w-[750px] rounded-l rounded-r "
-                  style={{
-                    animation: "color-change 10s infinite linear",
-                    backgroundImage: "radial-gradient(closest-side, currentColor, transparent)"
-                  }}></div>
+                  <div className="absolute w-[500px] bottom-[-60px]
+                  lg:left-1/2 lg:ml-0 lg:mr-0 lg:transform  lg:-translate-x-1/2 lg:bottom-[-77px]  lg:transform  lg:-translate-y-[33px] lg:ml-[50px]  h-[550px] lg:w-[750px] rounded-l rounded-r "
+                  style={{ 
+                  animation: "color-change 10s infinite linear",
+                  backgroundImage: "radial-gradient(closest-side, currentColor, transparent)"
+                  }}>
+                    
+                  </div>
                   {/*End Blur effect  */}
                 
                 <img
                   src={inoue}
-                  alt="Leon"
-                  className="absolute w-[280px] h-[280px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-[140px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  alt="Inoue Soke"
+                  className="absolute w-[85%] max-w-[390px] h-[290px] top-[50px]  -translate-x-[90px] -translate-y-[100px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
                     lg:w-[500px] lg:h-[500px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-80 lg:-translate-y-[275px]"
                 />
                 <img
                   src={kyoshi}
-                  alt="Leon"
-                  className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
-                    lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-15 lg:-translate-y-[300px]"
+                  alt="Kyoshi"
+                  className="absolute  w-[80%]  max-w-[250px] h-[250px] 
+                  top-[30px]  translate-x-1/4  -translate-y-[100px]  mt-4 ml-4 
+                  sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-[100px] lg:-translate-y-[275px]"
                 />
                 <img
                   src={senseiManuel}
-                  alt="Leon"
-                  className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  alt="Sensei Manuel"
+                  className="absolute w-[230px] h-[230px] top-[20px] -translate-x-[0px]   mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
                     lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-45 lg:-translate-y-[150px]"
                 />
                 <img
                   src={rika}
-                  alt="Leon"
-                  className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  alt="Rika"
+                  className="absolute w-[280px] h-[280px] top-1/6  -translate-x-1/3  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
                     lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-78 lg:-translate-y-1/3"
                 />
                 <img
                   src={imageLeon}
                   alt="Leon"
-                  className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  className="absolute w-[80%] max-w-[380px] h-[280px] top-1/6  translate-x-1/3  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
                     lg:w-[380px] lg:h-[380px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-13 lg:-translate-y-[113px]"
                 />
                 <img
                   src={german}
-                  alt="Leon"
-                  className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  alt="German"
+                  className="absolute w-[230px] h-[230px] top-[120px]  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
                     lg:w-[300px] lg:h-[300px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-40 lg:-translate-y-[33px] "
                 />
                 
@@ -103,8 +108,8 @@ const Hero = () => {
 
                 {/* Blur effect at the bottom */}
 
-                <div className="absolute bottom-0 lg:bottom-[-55px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-[33px] lg:ml-[50px]      
-                    h-[60px] lg:w-[630px] rounded-l rounded-r opacity-90"
+                <div className="absolute  bottom-3 ml-8   h-[55px]  w-full  lg:bottom-[-55px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-[33px] lg:ml-[50px]      
+                    lg:h-[60px] lg:w-[630px] rounded-l rounded-r opacity-90"
                   style={{
                     animation: "color-change 10s infinite linear",
                     backgroundImage: "radial-gradient(closest-side, currentColor 45%, transparent )"

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+--bubblegum-pink: #ef476fff;
+--sand: #b8b070ff;
+--emerald: #6fffe9ff;
+--ocean-blue: #118ab2ff;
+--baby-blue-ice: #a0cbffff
+}
+
 .rain-container {
   position: absolute;
   inset: 0;
@@ -13,7 +21,7 @@
   --delay: 0.1s;
 }
 
-.particles > div {
+.particles>div {
   position: absolute;
   border-radius: 100%;
   background-color: rgba(191, 228, 253, 0.8);
@@ -26,101 +34,149 @@
   animation-name: wave;
 }
 
-.particles > div:nth-child(1) {
+.particles>div:nth-child(1) {
   width: 7px;
   height: 7px;
   bottom: 80%;
   left: 50%;
   animation-name: jumpLeft;
+  animation-delay: 0s;
 }
 
-.particles > div:nth-child(2) {
+.particles>div:nth-child(2) {
   width: 5px;
   height: 5px;
   bottom: 60%;
   left: 30%;
   animation-name: jumpLeft;
-  animation-delay:   0.02s;
+  animation-delay: 2s;
 }
 
-.particles > div:nth-child(3) {
+.particles>div:nth-child(3) {
   width: 3px;
   height: 3px;
   bottom: 20%;
   left: 70%;
   animation-name: jumpRight;
-  animation-delay:  0.04s;
+  animation-delay: 4s;
 }
 
-.particles > div:nth-child(4) {
+.particles>div:nth-child(4) {
   width: 5px;
   height: 5px;
   bottom: 20%;
   left: 80%;
   animation-name: jumpRight;
-  animation-delay: 0.06s;
+  animation-delay: 0.5s;
 }
 
-.particles > div:nth-child(5) {
+.particles>div:nth-child(5) {
   width: 6px;
   height: 6px;
   bottom: 40%;
   left: 10%;
   animation-name: jumpLeft;
-  animation-delay:  0.08s;
+  animation-delay: 6s;
 }
 
-.particles > div:nth-child(6) {
+.particles>div:nth-child(6) {
   width: 8px;
   height: 8px;
   bottom: 50%;
   left: 40%;
   animation-name: jumpRight;
-  animation-delay: calc(var(--delay) + 0.1s);
+  animation-delay: 1.5s;
 }
 
-.particles > div:nth-child(7) {
+.particles>div:nth-child(7) {
   width: 4px;
   height: 4px;
   bottom: 30%;
   left: 60%;
   animation-name: jumpLeft;
-  animation-delay: calc(var(--delay) + 0.12s);
+  animation-delay: 7.5s;
 }
 
-.particles > div:nth-child(8) {
+.particles>div:nth-child(8) {
   width: 7px;
   height: 7px;
   bottom: 25%;
   left: 90%;
   animation-name: jumpRight;
- animation-delay:  0.08s;
+  animation-delay: 3.2s;
 }
 
-.particles > div:nth-child(9) {
+.particles>div:nth-child(9) {
   width: 5px;
   height: 5px;
   bottom: 50%;
   left: 80%;
   animation-name: jumpRight;
-  animation-delay: calc(var(--delay) + 0.06s);
+  animation-delay: 5.5s;
 }
 
-.particles > div:nth-child(10) {
+.particles>div:nth-child(10) {
   width: 7px;
   height: 7px;
   bottom: 80%;
   right: 50%;
   animation-name: jumpRight;
+  animation-delay: 8.2s;
 }
 
-.particles > div:nth-child(11) {
+.particles>div:nth-child(11) {
   width: 7px;
   height: 7px;
   bottom: 75%;
   left: 90%;
   animation-name: jumpRight;
-animation-delay:  0.08s;
+  animation-delay: 1s;
+}
+
+
+@keyframes border-color-change {
+    0%, 100%{border-color: var(--bubblegum-pink);}
+    20%{border-color: var(--sand);}
+    40%{border-color: var(--emerald); }
+    60%{border-color: var(--ocean-blue);}
+    80%{border-color: var(--baby-blue-ice);}
+}
+
+@keyframes bg-color-change {
+    0%, 100%{background-color: var(--bubblegum-pink);}
+    20%{background-color: var(--sand);}
+    40%{background-color: var(--emerald); }
+    60%{background-color: var(--ocean-blue);}
+    80%{background-color: var(--baby-blue-ice);}
+}
+
+
+.hover-border-white:hover {
+  border-color: white !important;
+}
+
+@keyframes color-change {
+
+  0%,
+  100% {
+    color: var(--bubblegum-pink);
+  }
+
+  20% {
+    color: var(--sand);
+  }
+
+  40% {
+    color: var(--emerald);
+  }
+
+  60% {
+    color: var(--ocean-blue);
+  }
+
+  80% {
+    color: var(--baby-blue-ice);
+  }
 }
 
 
@@ -128,12 +184,15 @@ animation-delay:  0.08s;
   0% {
     transform: translate(0, 100px) scale(0);
   }
+
   45% {
     transform: translate(0, 100px) scale(0);
   }
+
   60% {
     transform: translate(-50px, 0) scale(1);
   }
+
   100% {
     transform: translate(-60px, -100px) scale(0.1);
   }
@@ -143,12 +202,15 @@ animation-delay:  0.08s;
   0% {
     transform: translate(0, 100px) scale(0);
   }
+
   45% {
     transform: translate(0, 100px) scale(0);
   }
+
   60% {
     transform: translate(30px, 0) scale(1);
   }
+
   100% {
     transform: translate(50px, -100px) scale(0.1);
   }
@@ -156,71 +218,87 @@ animation-delay:  0.08s;
 
 @keyframes wave {
   0% {
-    background: radial-gradient(ellipse at top center, #4a91e2b8 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--bubblegum-pink) 0%, transparent 30%);
     transform: translateX(0px) translateY(0px);
   }
+
   8.33% {
-    background: radial-gradient(ellipse at top center, #56a3e6a3 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--bubblegum-pink) 0%, transparent 30%);
     transform: translateX(1px) translateY(2px);
   }
+
   12.5% {
-    background: radial-gradient(ellipse at top center, #63a6e9a8 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--sand) 0%, transparent 30%);
     transform: translateX(2px) translateY(0px);
   }
+
   16.67% {
-    background: radial-gradient(ellipse at top center, #7cbaf09e 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--emerald) 0%, transparent 30%);
     transform: translateX(1px) translateY(-2px);
   }
+
   25% {
-    background: radial-gradient(ellipse at top center, #8cc4f0d0 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--emerald) 0%, transparent 30%);
     transform: translateX(0px) translateY(0px);
   }
+
   33.33% {
-    background: radial-gradient(ellipse at top center, #a8d5f0cd 0%, transparent 70%);
-    transform: translateX(-1px) translateY(2px);
+    background: radial-gradient(ellipse at top center, var(--ocean-blue) 0%, transparent 30%);
+    transform: translateX(-1px) translateY(2px);  
   }
+
   37.5% {
-    background: radial-gradient(ellipse at top center, #bedef3cd 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--ocean-blue) 0%, transparent 30%);
     transform: translateX(-2px) translateY(0px);
   }
+
   41.67% {
-    background: radial-gradient(ellipse at top center, #c9e3f5cd 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--ocean-blue) 0%, transparent 30%);
     transform: translateX(-1px) translateY(-2px);
   }
+
   50% {
-    background: radial-gradient(ellipse at top center, #d4e8f7c4 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--baby-blue-ice) 0%, transparent 30%);
     transform: translateX(0px) translateY(0px);
   }
+
   58.33% {
-    background: radial-gradient(ellipse at top center, #dfeef9e0 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--baby-blue-ice) 0%, transparent 30%);
     transform: translateX(1px) translateY(2px);
   }
+
   62.5% {
-    background: radial-gradient(ellipse at top center, #badcf1e0 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--baby-blue-ice) 0%, transparent 30%);
     transform: translateX(2px) translateY(0px);
   }
+
   66.67% {
-    background: radial-gradient(ellipse at top center, #b7e1ffd2 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--bubblegum-pink) 0%, transparent 30%);
     transform: translateX(1px) translateY(-2px);
   }
+
   75% {
-    background: radial-gradient(ellipse at top center, #abd8f4d2 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--bubblegum-pink) 0%, transparent 30%);
     transform: translateX(0px) translateY(0px);
   }
+
   83.33% {
-    background: radial-gradient(ellipse at top center, #d4e8f7c5 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--sand) 0%, transparent 30%);
     transform: translateX(-1px) translateY(2px);
   }
+
   87.5% {
-    background: radial-gradient(ellipse at top center, #bedef3c5 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--sand) 0%, transparent 30%);
     transform: translateX(-2px) translateY(0px);
   }
+
   91.67% {
-    background: radial-gradient(ellipse at top center, #82c9f6c5 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--emerald) 0%, transparent 30%);
     transform: translateX(-1px) translateY(-2px);
   }
+
   100% {
-    background: radial-gradient(ellipse at top center, #1ea6fad0 0%, transparent 70%);
+    background: radial-gradient(ellipse at top center, var(--emerald) 0%, transparent 30%);
     transform: translateX(0px) translateY(0px);
   }
 }

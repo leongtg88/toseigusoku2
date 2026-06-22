@@ -29,37 +29,37 @@ const Hero2 = () => {
           <img
           src={inoue}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[500px] lg:h-[500px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-95 lg:-translate-y-[275px]" 
           />
           <img
           src={kyoshi}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-40 lg:-translate-y-[300px]" 
           />
           <img
           src={senseiManuel}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:translate-x-[-270px] lg:-translate-y-[150px]" 
           />
           <img
           src={rika}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-100 lg:-translate-y-1/3" 
           />
         <img
           src={imageLeon}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[380px] lg:h-[380px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-35 lg:-translate-y-[113px]" 
           />
           <img
           src={german}
           alt="Leon"
-          className="absolute w-32 h-32 mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+          className="absolute w-[98px] h-[98px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
           lg:w-[300px] lg:h-[300px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-60 lg:-translate-y-[33px]" 
           />
 

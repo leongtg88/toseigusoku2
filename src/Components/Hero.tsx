@@ -30,7 +30,7 @@ const Hero = () => {
 
             {/*Conteneodr izquierdo imagenes */}
 
-            <div className='relative px-8   h-[400px] lg:w-1/2 lg:h-[600px] '>
+            <div className='relative px-8 pt-[40px]  h-[400px] lg:w-1/2 lg:h-[600px] '>
 
               {/*Contenedor inquierdo hijo imagenes */}
               <div className="relative h-full lg:h-full lg:w-full   flex flex-col  items-center">
@@ -49,40 +49,44 @@ const Hero = () => {
                 <img
                   src={inoue}
                   alt="Inoue Soke"
-                  className="absolute w-[85%] max-w-[390px] h-[290px] top-[50px]  -translate-x-[90px] -translate-y-[100px] mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
-                    lg:w-[500px] lg:h-[500px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-80 lg:-translate-y-[275px]"
+                  className="absolute w-[100%] max-w-[360px] h-[280px] -top-[60px] -translate-x-[80px]
+                    sm:w-[180px] sm:h-[180px] sm:-translate-x-[90px] sm:-translate-y-[125px]
+                    lg:w-[500px] lg:max-w-[500px] lg:h-[500px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-80 lg:-translate-y-[275px]"
                 />
                 <img
                   src={kyoshi}
                   alt="Kyoshi"
-                  className="absolute  w-[80%]  max-w-[250px] h-[250px] 
-                  top-[30px]  translate-x-1/4  -translate-y-[100px]  mt-4 ml-4 
-                  sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
-                  lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-[100px] lg:-translate-y-[275px]"
+                  className="absolute w-[80%] max-w-[220px] h-[220px] -top-[70px] translate-x-[50px]
+                  sm:w-[150px] sm:h-[150px] sm:-translate-x-[15px] sm:-translate-y-[125px]
+                  lg:w-[400px] lg:max-w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-[100px] lg:-translate-y-[275px]"
                 />
                 <img
                   src={senseiManuel}
                   alt="Sensei Manuel"
-                  className="absolute w-[230px] h-[230px] top-[20px] -translate-x-[0px]   mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  className="absolute w-[200px] h-[200px] top-[20px] translate-x-[-20px]
+                    sm:w-[140px] sm:h-[140px] sm:-translate-x-[55px] sm:-translate-y-[65px]
                     lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-45 lg:-translate-y-[150px]"
                 />
                 <img
                   src={rika}
                   alt="Rika"
-                  className="absolute w-[280px] h-[280px] top-1/6  -translate-x-1/3  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  className="absolute w-[220px] h-[220px] top-[60px] -translate-x-[110px]
+                    sm:w-[140px] sm:h-[140px] sm:-translate-x-[100px] sm:-translate-y-[40px]
                     lg:w-[400px] lg:h-[400px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-78 lg:-translate-y-1/3"
                 />
                 <img
                   src={imageLeon}
                   alt="Leon"
-                  className="absolute w-[80%] max-w-[380px] h-[280px] top-1/6  translate-x-1/3  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
+                  className="absolute w-[80%] max-w-[350px] h-[250px] top-[40px] translate-x-[60px]
+                    sm:w-[150px] sm:h-[150px] sm:-translate-x-[20px] sm:-translate-y-[70px]
                     lg:w-[380px] lg:h-[380px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-13 lg:-translate-y-[113px]"
                 />
                 <img
                   src={german}
                   alt="German"
-                  className="absolute w-[230px] h-[230px] top-[120px]  mt-4 ml-4 sm:w-40 sm:h-40 sm:mt-6 sm:ml-6 
-                    lg:w-[300px] lg:h-[300px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-40 lg:-translate-y-[33px] "
+                  className="absolute w-[180px] h-[180px] top-[100px] translate-x-[-30px]
+                    sm:w-[140px] sm:h-[140px] sm:-translate-x-[55px] sm:translate-y-[15px]
+                    lg:w-[80%] lg:max-w-[300px] lg:h-[300px] lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-40 lg:-translate-y-[33px]"
                 />
                 
 
@@ -108,8 +112,8 @@ const Hero = () => {
 
                 {/* Blur effect at the bottom */}
 
-                <div className="absolute  bottom-3 ml-8   h-[55px]  w-full  lg:bottom-[-55px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-[33px] lg:ml-[50px]      
-                    lg:h-[60px] lg:w-[630px] rounded-l rounded-r opacity-90"
+                <div className="absolute  bottom-[60px] ml-8   h-[30px]  w-[350px] max-w-[450px]:  lg:bottom-[-55px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-[33px] lg:ml-[50px]      
+                    lg:h-[60px] lg:w-[630px] lg:max-w-[630px]: rounded-l rounded-r opacity-90"
                   style={{
                     animation: "color-change 10s infinite linear",
                     backgroundImage: "radial-gradient(closest-side, currentColor 45%, transparent )"
@@ -123,13 +127,13 @@ const Hero = () => {
 
             {/*Contenedor derecho imagenes */}
 
-            <div className="lg:w-1/2 text-left text-white max-w-lg   flex justify-center mx-auto lg:ml-12 ">
+            <div className="lg:w-1/2 text-left text-white lg:max-w-lg lg:mx-auto px-4 flex justify-center lg:ml-12">
 
               {/*Contenedor  titulos */}
-              <div className="bg-transparent backdrop-blur-xs p-8 py-8  border-[1px] hover:backdrop-blur-lg border-current  rounded-lg shadow-xl/50 transition-[backdrop-filter] duration-500" 
+              <div className="bg-transparent backdrop-blur-xs px-8 py-8  border-[1px] hover:backdrop-blur-lg border-current  rounded-lg shadow-xl/50 transition-[backdrop-filter] duration-500" 
               style={{animation: " color-change 10s infinite linear"}}>
 
-            <h1 className="text-5xl lg:text-6xl font-bold lg:text-leading-tight">
+            <h1 className=" text-3xl lg:text-5xl lg:text-6xl font-bold lg:text-leading-tight">
               TU CUERPO ES
               <br />
               <span className="text-white">TU TEMPLO</span>

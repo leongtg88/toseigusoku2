@@ -17,7 +17,7 @@ const Hero = () => {
 
             <div
                 id="hero__content"
-                className="relative h-full grid  grid-rows-2 md:grid-cols-2 items-center px-4 sm:px-2 lg:px-2"
+                className="relative h-full grid  grid-rows-[auto_auto] md:grid-cols-2 items-center px-4 sm:px-2 lg:px-2"
             >
                 {/* Images Section */}
 

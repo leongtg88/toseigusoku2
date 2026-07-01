@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="relative h-full flex flex-col  justify-center px-4 
       sm:px-6 sm:pt-[50px]
       md:px-8 md:py-[60px]  md:flex-col md:items-center
-      lg:px-2 lg:py-[80px]  lg:flex-row lg:items-center   
+       lg:px-2 lg:py-0 lg:flex-row lg:items-center  
       xl:items-center  
       2xl:pb-[150px]   ">
 
@@ -47,8 +47,8 @@ const Hero = () => {
         <div className='relative px-8 pt-[30px] h-[200px]  mt-[80px]
             sm:h-[290px]  sm:pt-[160px]  sm:px-8  sm:mt-[30px]  sm:mb-[90px] 
             md:h-[380px] 
+                lg:w-1/2 lg:h-full lg:pt-0 lg:mt-0 lg:flex lg:items-center
             xl:h-[400px] xl:pt-[100px]   
-            lg:w-1/2 lg:h-[350px]  lg:justify-start
             2xl:h-[400px]  flex justify-center'> 
 
           {/*Contenedor inquierdo hijo imagenes */}
@@ -58,7 +58,7 @@ const Hero = () => {
               
               md:h-[350px] md:w-[400px] md:top-[160px]
 
-              lg:h-[350px] lg:w-full -mt-[170px]
+              lg:h-[350px]  flex flex-col items-center lg:w-full 
               
               xl:h-[300px]  flex flex-col  items-center">
 
@@ -69,7 +69,7 @@ const Hero = () => {
 
                   md:bottom-[px]  md:mr-0 md:transform md:-translate-x-[0px]  md:h-[550px]  md:w-[700px]
                   
-                  lg:left-1/2  lg:ml-0  lg:mr-0  lg:transform  lg:-translate-x-1/2  lg:bottom-[-100px]  lg:transform  lg:-translate-y-[33px] lg:ml-[50px]   lg:w-[750px]
+                  lg:left-1/2  lg:ml-0  lg:mr-0  lg:transform  lg:-translate-x-1/2   lg:left-[200px]  lg:bottom-[-100px]  lg:transform  lg:-translate-y-[33px] lg:ml-[50px]   lg:w-[600px]
                   
                   xl:bottom-[-100px]  xl:left-1/2  xl:transform  xl:-translate-x-1/2  xl:w-[800px]  xl:max-w-[900px]
                   
@@ -90,22 +90,25 @@ const Hero = () => {
                     
                     sm:w-[100%] sm:max-w-[260px] sm:h-[260px] sm:top-[20px]  sm:-translate-x-[90px] sm:-translate-y-[125px]
                     
-                    lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[290px]  lg:-translate-y-[275px] lg:transform lg:-translate-x-[60px]
+                    lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[-50px] lg:left-[110px]    
                 
-                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[180px]  xl:-translate-y-[275px] xl:transform xl:-translate-x-[60px]"
+                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[-190px]   xl:left-[160px] xl:translate-x-[-90px]
+                    
+                    2xl:w-[100%] 2xl:max-w-[350px] 2xl:h-[350px] 2xl:top-[-120px] 2xl:left-1/3 2xl:transform 2xl:-translate-x-[100px]
+                    "
             />
-            <img
+            <img 
               src={kyoshi}
               alt="Kyoshi"
               className="absolute w-[100%] max-w-[230px] h-[220px] -top-[70px] translate-x-[60px]
                     
-                    sm:w-[100%] sm:max-w-[280px] sm:h-[250px] sm:top-[20px] sm:translate-x-[60px] sm:-translate-y-[125px]
+                    sm:w-[100%] sm:max-w-[260px] sm:h-[260px] sm:top-[20px]  sm:-translate-x-[90px] sm:-translate-y-[125px]
                   
-                    lg:w-[300px] lg:max-w-[300px] lg:h-[300px] lg:top-[90px] lg:left-[250px] lg:transform lg:-translate-x-[100px] lg:-translate-y-[100px]
+                    lg:w-[300px] lg:max-w-[300px] lg:h-[300px] lg:top-[20px] lg:-translate-y-[200px]  lg:left-[260px]  
                     
-                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:-top-[20px] xl:left-1/2  xl:transform xl:-translate-x-[50px] 
+                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[-160px]  xl:left-[290px]  xl:-translate-x-[50px]
 
-                    2xl:w-[100%] 2xl:max-w-[350px] 2xl:h-[350px] 2xl:-top-[20px] 2xl:left-1/2 2xl:transform 2xl:-translate-x-[70px]"
+                    2xl:w-[100%] 2xl:max-w-[350px] 2xl:h-[350px] 2xl:-top-[90px] 2xl:left-1/2 2xl:transform 2xl:-translate-x-[80px]"
 
 
             />
@@ -116,9 +119,11 @@ const Hero = () => {
                     
                     sm:w-[80%] sm:max-w-[280px] sm:h-[240px] sm:top-[20px] sm:-translate-x-[20px] sm:-translate-y-[65px]
                     
-                    lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[250px] lg:left-[250px] lg:transform lg:-translate-x-45 lg:-translate-y-[150px]
+                    lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[20px] lg:left-[120px]
                 
-                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[180px] xl:left-1/2 xl:transform xl:-translate-x-45 xl:-translate-y-[150px]"
+                    xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[-90px] xl:left-1/2 xl:transform xl:-translate-x-45 
+                    2xl
+                    "
             />
             <img
               src={rika}
@@ -127,9 +132,9 @@ const Hero = () => {
                     
                   sm:w-[80%] sm:max-w-[280px] sm:h-[240px] sm:-translate-x-[100px] sm:-translate-y-[40px]
                   
-                  lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[270px] lg:left-[270px] lg:transform lg:-translate-x-78 lg:-translate-y-1/3
+                  lg:w-[100%] lg:max-w-[300px] lg:h-[300px] lg:top-[40px] lg:left-[300px] lg:transform lg:-translate-x-78 
                 
-                  xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[190px] xl:left-1/2 xl:transform xl:-translate-x-78 xl:-translate-y-1/3"
+                  xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[-100px] xl:left-1/2  xl:-translate-x-78 "
             />
             <img
               src={imageLeon}
@@ -138,9 +143,9 @@ const Hero = () => {
                     
                   sm:w-[80%] sm:max-w-[280px] sm:h-[240px] sm:top-[100px] sm:translate-x-[80px] sm:-translate-y-[70px]
                   
-                  lg:w-[100%] lg:max-w-[320px] lg:h-[320px] lg:top-[260px] lg:left-1/2 lg:transform lg:-translate-x-13 lg:-translate-y-[113px]
+                  lg:w-[100%] lg:max-w-[320px] lg:h-[320px] lg:top-[50px] lg:left-[120px] lg:transform 
                 
-                  xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[180px] xl:left-1/2 xl:transform xl:-translate-x-13 xl:-translate-y-[113px]"
+                  xl:w-[100%] xl:max-w-[350px] xl:h-[350px] xl:top-[-80px] xl:left-1/2 xl:transform xl:-translate-x-13 "
             />
             <img
               src={german}
@@ -149,9 +154,9 @@ const Hero = () => {
                   
                   sm:w-[60%] sm:max-w-[180px] sm:h-[180px] sm:top-[75px] sm:-translate-x-[15px] sm:translate-y-[15px]
                   
-                  lg:w-[80%] lg:max-w-[220px] lg:h-[220px] lg:top-[250px] lg:left-[240px] lg:transform lg:-translate-x-40 lg:-translate-y-[33px]
+                  lg:w-[80%] lg:max-w-[220px] lg:h-[220px] lg:top-[60px] lg:left-[150px] lg:transform 
 
-                  xl:w-[100%] xl:max-w-[270px] xl:h-[270px] xl:top-[180px] xl:left-1/2 xl:transform xl:-translate-x-40 xl:-translate-y-[33px]"
+                  xl:w-[100%] xl:max-w-[270px] xl:h-[270px] xl:top-[-80px] xl:left-1/2 xl:transform xl:-translate-x-40 "
             />
 
             {/* Rain container */}
@@ -184,11 +189,11 @@ const Hero = () => {
 
                 md:bottom-[65px] md:ml-8 md:h-[30px] md:w-[500px] md:max-w-[600px]
                 
-                lg:bottom-[-185px] lg:transform  lg:-translate-y-[40px] lg:ml-[80px]  lg:h-[50px] lg:w-[600px] lg:max-w-[700px]
+                lg:bottom-[-20px] lg:transform  lg:left-[-100px] lg:-translate-y-[40px] lg:ml-[80px]  lg:h-[50px] lg:w-[600px] lg:max-w-[700px]
 
-                xl:bottom-[-185px]    xl:transform  xl:-translate-x-[0px]  xl:w-[800px]  xl:max-w-[900px]
+                xl:bottom-[20px]   xl:-translate-x-[0px]  xl:w-[800px]  xl:max-w-[900px]
                 
-                2xl:bottom-[-185px]  2xl:transform 2xl:translate-x-[0px] 2xl:w-[740px]  4xl:max-w-[900px] 
+                2xl:bottom-[25px]  2xl:transform 2xl:translate-x-[0px] 2xl:w-[740px]  4xl:max-w-[900px] 
                 
                 custom-range:bottom-[-185px] custom-range:transform custom-range:-translate-x-[300px] custom-range:w-[740px]  custom-range:max-w-[900px]
                 "
